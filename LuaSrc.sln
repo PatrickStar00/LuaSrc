@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lualib", "lualib\lualib.vcxproj", "{5DDA11FD-4273-4F23-A9E5-2DAD96DAB4F0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lua", "lua\lua.vcxproj", "{61F893BF-BF9E-478C-8630-957B4CC189A9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5DDA11FD-4273-4F23-A9E5-2DAD96DAB4F0} = {5DDA11FD-4273-4F23-A9E5-2DAD96DAB4F0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "luac", "luac\luac.vcxproj", "{8CD7B854-1C9C-4B8B-8E13-ED9C6F041178}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5DDA11FD-4273-4F23-A9E5-2DAD96DAB4F0} = {5DDA11FD-4273-4F23-A9E5-2DAD96DAB4F0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "luatest", "luatest\luatest.vcxproj", "{A54CA3EB-6276-4025-B4EC-429A5530C69A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5DDA11FD-4273-4F23-A9E5-2DAD96DAB4F0} = {5DDA11FD-4273-4F23-A9E5-2DAD96DAB4F0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DDA11FD-4273-4F23-A9E5-2DAD96DAB4F0}.Debug|x64.ActiveCfg = Debug|x64
+		{5DDA11FD-4273-4F23-A9E5-2DAD96DAB4F0}.Debug|x64.Build.0 = Debug|x64
+		{5DDA11FD-4273-4F23-A9E5-2DAD96DAB4F0}.Debug|x86.ActiveCfg = Debug|Win32
+		{5DDA11FD-4273-4F23-A9E5-2DAD96DAB4F0}.Debug|x86.Build.0 = Debug|Win32
+		{5DDA11FD-4273-4F23-A9E5-2DAD96DAB4F0}.Release|x64.ActiveCfg = Release|x64
+		{5DDA11FD-4273-4F23-A9E5-2DAD96DAB4F0}.Release|x64.Build.0 = Release|x64
+		{5DDA11FD-4273-4F23-A9E5-2DAD96DAB4F0}.Release|x86.ActiveCfg = Release|Win32
+		{5DDA11FD-4273-4F23-A9E5-2DAD96DAB4F0}.Release|x86.Build.0 = Release|Win32
+		{61F893BF-BF9E-478C-8630-957B4CC189A9}.Debug|x64.ActiveCfg = Debug|x64
+		{61F893BF-BF9E-478C-8630-957B4CC189A9}.Debug|x64.Build.0 = Debug|x64
+		{61F893BF-BF9E-478C-8630-957B4CC189A9}.Debug|x86.ActiveCfg = Debug|Win32
+		{61F893BF-BF9E-478C-8630-957B4CC189A9}.Debug|x86.Build.0 = Debug|Win32
+		{61F893BF-BF9E-478C-8630-957B4CC189A9}.Release|x64.ActiveCfg = Release|x64
+		{61F893BF-BF9E-478C-8630-957B4CC189A9}.Release|x64.Build.0 = Release|x64
+		{61F893BF-BF9E-478C-8630-957B4CC189A9}.Release|x86.ActiveCfg = Release|Win32
+		{61F893BF-BF9E-478C-8630-957B4CC189A9}.Release|x86.Build.0 = Release|Win32
+		{8CD7B854-1C9C-4B8B-8E13-ED9C6F041178}.Debug|x64.ActiveCfg = Debug|x64
+		{8CD7B854-1C9C-4B8B-8E13-ED9C6F041178}.Debug|x64.Build.0 = Debug|x64
+		{8CD7B854-1C9C-4B8B-8E13-ED9C6F041178}.Debug|x86.ActiveCfg = Debug|Win32
+		{8CD7B854-1C9C-4B8B-8E13-ED9C6F041178}.Debug|x86.Build.0 = Debug|Win32
+		{8CD7B854-1C9C-4B8B-8E13-ED9C6F041178}.Release|x64.ActiveCfg = Release|x64
+		{8CD7B854-1C9C-4B8B-8E13-ED9C6F041178}.Release|x64.Build.0 = Release|x64
+		{8CD7B854-1C9C-4B8B-8E13-ED9C6F041178}.Release|x86.ActiveCfg = Release|Win32
+		{8CD7B854-1C9C-4B8B-8E13-ED9C6F041178}.Release|x86.Build.0 = Release|Win32
+		{A54CA3EB-6276-4025-B4EC-429A5530C69A}.Debug|x64.ActiveCfg = Debug|x64
+		{A54CA3EB-6276-4025-B4EC-429A5530C69A}.Debug|x64.Build.0 = Debug|x64
+		{A54CA3EB-6276-4025-B4EC-429A5530C69A}.Debug|x86.ActiveCfg = Debug|Win32
+		{A54CA3EB-6276-4025-B4EC-429A5530C69A}.Debug|x86.Build.0 = Debug|Win32
+		{A54CA3EB-6276-4025-B4EC-429A5530C69A}.Release|x64.ActiveCfg = Release|x64
+		{A54CA3EB-6276-4025-B4EC-429A5530C69A}.Release|x64.Build.0 = Release|x64
+		{A54CA3EB-6276-4025-B4EC-429A5530C69A}.Release|x86.ActiveCfg = Release|Win32
+		{A54CA3EB-6276-4025-B4EC-429A5530C69A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC9B5139-B08C-4E55-8076-BEE2300AC6BD}
+	EndGlobalSection
+EndGlobal
